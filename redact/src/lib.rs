@@ -1,1 +1,1 @@
-/* a library for doing marco polo  */
+// a main function that calls the redact function
