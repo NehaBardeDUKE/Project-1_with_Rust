@@ -9,7 +9,7 @@ Possible usecase: FERPA requires students to be non identifiable and only the st
 To build the container and run the application:
 ```bash
 docker pull nehabardeduke/redact_ids:latest
-docker run --rm -it redact_ids start 
+docker run --rm -it nehabardeduke/redact_ids start 
 ```
 
 ## Basic Idea/Architechture
