@@ -22,7 +22,7 @@ fn main() {
     let args = Cli::parse();
     match args.command {
         Some(Commands::Start) => {
-            redaction::data();
+            redact::data();
         }
         None => println!("No subcommand was used"),
     }
