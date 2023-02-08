@@ -1,9 +1,16 @@
 ## Information redaction microservice based on IAM
 
-Based on the person requesting the information, take data from an Azure database and provide a descriptive file containing only the information that is required for that access level.
+Based on the person requesting the information, the raw data or a summarized data is displayed.
 
-Ex: FERPA requires students to be non identifiable and only the students to have access to their educational info. So if a mental health professional needs a student's info the microservice will provide required statistics (like how is the student's performance looking) instead of the actual data.
+Possible usecase: FERPA requires students to be non identifiable and only the students to have access to their educational info. So if a mental health professional needs a student's info the microservice will provide required statistics (like student's performance metric) instead of the actual data.
 
-Rough Idea:
+## Usage
 
-![image](https://user-images.githubusercontent.com/110474064/213881408-bb4e42fb-3327-4bfd-9488-6fee3da1d48f.png)
+To build the container and run the application:
+```bash
+docker build -t redact_ids .
+docker run --rm -it redact_ids start 
+```
+
+
+
